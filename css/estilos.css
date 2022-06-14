@@ -77,6 +77,9 @@ header img{
 	padding: 5px 20px;
     border-radius: 10px;
 	}
+    .navbar-nav{
+        color: black;
+    }
 /* MEDIAS QUERIES HEADER*/
 
 @media screen and (min-width:320px) and (max-width:960px)   
@@ -130,6 +133,7 @@ header img{
         grid-area: img;
         width: 0%;
         margin: 10px 200px 0 0;
+        
 
     }
 }
@@ -215,7 +219,7 @@ header img{
 }
 
 /* MEDIAS QUERIES HERO*/
-@media screen and (min-width:320px) and (max-width:960px) {
+@media screen and (min-width:320px) and (max-width:992px) {
 
     .contenedor-hero{
        display: flex;
@@ -229,7 +233,6 @@ header img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50%;
     
     }
     .hero h1{
@@ -255,8 +258,8 @@ header img{
         align-items: center;
     }
     .hero img{
-        width: 20vh;
-        margin: 10px 0px 200px 20px ;
+        width: 30vh;
+        margin: 10px 0px 100px 0px ;
     }
     .padre{
     display: flex;
@@ -266,9 +269,7 @@ header img{
     #padre img{
         grid-area: img;
         width: 0%;
-        margin: 10px 0px 0 0;
-        right: 0%;
-        bottom: 20vh;
+        margin: 10px 0px;
     }
     .col-6{
         display: flex;
@@ -282,6 +283,11 @@ header img{
         justify-content: center;
         align-items: center;
     }
+    .col-md-6{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 .footer{
@@ -329,17 +335,18 @@ header img{
     .text{
         grid-area: b;
         display: flex;
+        align-items: center;
+        justify-items:center ;
         flex-direction: column;
         width: 100%;
         margin: 0px 0px;
         padding: 0px 0px ;
-        align-items: center;
-        justify-items:center ;
+
         
     
     }
     .text h1{
-        font-size: 50px;
+        font-size: 5vh;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
         
@@ -376,7 +383,7 @@ header img{
   
     
     .text p{
-        width: 70%;
+        width: 40vh;
         text-align: justify;
         display: flex;
         font-size: 20px;
@@ -399,7 +406,7 @@ header img{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 25px 0px 90px 100px;
+        margin: 25px 0px;
         width: 55%;
         
     }
@@ -415,16 +422,19 @@ header img{
     }
     
 /* MEDIAS QUERIES NOSOTROS*/
-@media screen and (min-width:320px) and (max-width:960px)
+@media screen and (min-width:320px) and (max-width:1200px)
 {
     .contenedor-main{
         display: flex;
-        flex-direction: column;}
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
 
          .main{
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-content: center;
 }
         .main img{
             display: flex;
@@ -435,19 +445,19 @@ header img{
         }
         .text{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
         .text h1{
             font-size: 4vh;
-            
+ 
         }
         
         .text p{
-            width: 30vh;
+            width: 40vh;
             text-align: justify;
-            display: flex;
-            font-size: 2vh
+            font-size: 3vh
         
         }
         .text button{
@@ -463,8 +473,8 @@ header img{
             font-weight:bolder
         }
         .text img{
-            margin: 25px 0px 40px 0px;
-            width: 100%;
+            margin-top: 25px;
+            width: 50%;
             
         }
         
@@ -472,7 +482,7 @@ header img{
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-            width: 80%;
+            width: 50%;
             position: absolute;
             top: 60%;
         }
@@ -481,8 +491,10 @@ header img{
 /* estilos boostrap */
 .row-6{
     display: flex;
+    flex-direction: column;
      gap: 2rem;
      justify-content: center;
+     align-items: center;
 }
 
 /* estilos vista "TESTIMONIOS" */
