@@ -1,0 +1,202 @@
+.hero {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0 0px;
+
+    & h1 {
+        font-size: 95px;
+        font-weight: bolder;
+        margin: 30px 0;
+        line-height: 80px;
+        text-align: left;
+    }
+
+    & p {
+        font-size: 30px;
+        font-weight: lighter;
+        margin: 0px 0px 0px 0px;
+
+    }
+
+    & img {
+        width: 70%;
+        margin: 20px 20px 90px 0px;
+
+    }
+
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#padre img {
+    grid-area: img;
+    width: 25%;
+    margin: 10px 200px 0 0;
+    position: absolute;
+    right: 0%;
+    top: 20vh;
+}
+
+/* MEDIAS QUERIES HERO*/
+@media screen and (min-width:320px) and (max-width:992px) {
+    .cotenedor-general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 2vh;
+    }
+
+    .header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    #menu li a:hover {
+        color: white;
+        background-color: rgb(58, 195, 165);
+        padding: 3px 3px;
+        border-radius: 3px;
+    }
+
+    .header img {
+        grid-area: img;
+        width: 250px;
+        margin: 40px 0px 0 0px;
+
+    }
+
+    .contenedor-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero h1 {
+        font-size: 6vh;
+        font-weight: bolder;
+        margin: 0px 0px 0px 0px;
+        line-height: 40px;
+        text-align: center;
+
+    }
+
+    .hero p {
+        width: 100%;
+        text-align: center;
+        font-size: 4vh;
+        font-weight: lighter;
+        margin: 5px 0px 0 0px
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero img {
+        width: 30vh;
+        margin: 10px 0px 100px 0px;
+    }
+
+    .padre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #padre img {
+        grid-area: img;
+        width: 0%;
+        margin: 10px 0px;
+    }
+
+    .col-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-md-6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
