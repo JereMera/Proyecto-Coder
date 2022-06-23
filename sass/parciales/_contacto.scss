@@ -1,0 +1,277 @@
+.contacto {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 0.2fr;
+    grid-template-areas: "a b c d";
+    column-gap: 23px;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    & h2 {
+        font-size: 3vh;
+        margin: 30px 20px 0 50px;
+        text-align: center;
+        color: map-get($colores, "blanco");
+
+    }
+
+    & p {
+        text-align: center;
+        margin: 0px 20px 0 50px;
+
+    }
+}
+
+.telefono {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: map-get($colores, "blanco");
+}
+
+.email {
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: map-get($colores, "blanco");
+}
+
+.atencion {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: map-get($colores, "blanco");
+}
+
+.ubicacion {
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: map-get($colores, "blanco");
+}
+
+#fondo h1 {
+    @include title-white
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 180%;
+    grid-template-rows: 0.1fr 0.1fr 0.3fr 0.1fr 0;
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e";
+    row-gap: 2rem;
+    margin: 0 0 10px 600px;
+
+}
+
+#nombres {
+    grid-area: a;
+}
+
+.emails {
+    grid-area: b;
+}
+
+.mensaje {
+    grid-area: c;
+}
+
+#submit {
+    grid-area: e;
+    width: 85px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 70px;
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: map-get($colores, "blanco");
+    font-size: 20px;
+}
+
+form {
+    margin: 0 350px;
+    width: 200%;
+    background-color: map-get($colores, "verde");
+
+}
+
+input,
+textarea {
+    width: 700px;
+    height: 27px;
+    background: map-get($colores, "blanco");
+    border: 2px map-get($colores, "blanco");
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 10px;
+    color: map-get($colores, "verde");
+    font-size: 13px;
+}
+
+textarea {
+    height: 150px;
+    font-size: 13px;
+
+}
+
+#fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: map-get($colores, "verde")
+}
+
+#footer {
+    width: 20%;
+    margin: -280px 0px 0px 0px;
+}
+
+@media screen and (min-width:320px) and (max-width:992px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #footer {
+        width: 20%;
+        margin: -100px 0px 0 300px;
+    }
+
+    .footer {
+        background-color: map-get($colores, "verde");
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        bottom: -6%;
+    }
+
+    .footer img {
+        width: 6%;
+        margin: 20px 10px;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px;
+        width: 400px;
+        background-color: map-get($colores, "verde");
+
+
+    }
+
+    input,
+    textarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        background: map-get($colores, "blanco");
+        border: 2px solid map-get($colores, "blanco");
+        color: map-get($colores, "verde");
+        font-size: 13px;
+    }
+
+    #submit {
+        grid-area: e;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 13px;
+
+    }
+
+
+}

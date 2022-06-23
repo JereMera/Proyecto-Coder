@@ -1,0 +1,40 @@
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.3fr;
+    justify-content: center;
+    align-items: center;
+
+    & li a:hover {
+        color: map-get($colores, "blanco");
+        background-color: map-get($colores, "blanco");
+        padding: 10px 10px;
+        border-radius: 10px;
+
+    }
+}
+
+.logo {
+    width: 235px;
+}
+
+.collapse {
+    display: flex;
+    text-decoration: none;
+    color: map-get($colores, "black");
+    font-weight: bold;
+    font-size: 23px;
+    justify-content: flex-end
+}
+
+.collapse a:hover {
+    color: white;
+    background-color: map-get($colores, "verde");
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+#navbar {
+    color: map-get($colores, "black")
+}

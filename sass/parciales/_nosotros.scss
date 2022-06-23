@@ -1,0 +1,191 @@
+.contenedor-main {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr;
+    padding: 50px 0px 0px;
+    grid-template-areas: "a b c";
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 280px;
+}
+
+.main {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    & img {
+        width: 60%;
+        margin: 10px 0px 0 0px;
+
+    }
+}
+
+.text {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+
+
+
+
+    & h1 {
+        @include title-black
+    }
+
+    & p {
+        width: 40vh;
+        text-align: justify;
+        display: flex;
+        font-size: 20px;
+
+    }
+
+    & button {
+        margin: 20px 0 0 0;
+        padding: 8px 12px;
+        color: white;
+        background-color: map-get($colores, "verde");
+        border-radius: 20px;
+        font-size: 15px;
+        justify-content: center;
+        align-content: center;
+        border-color: map-get($colores, "verde");
+        font-weight: bolder
+    }
+
+    & img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0px;
+        width: 55%;
+
+    }
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.imagen {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img {
+    width: 80%;
+    right: 0%;
+}
+
+@media screen and (min-width:320px) and (max-width:992px) {
+    .contenedor-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main img {
+        display: flex;
+        width: 20vh;
+        margin: 10px 0px 0 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text h1 {
+        font-size: 4vh;
+
+    }
+
+    .text p {
+        width: 40vh;
+        text-align: justify;
+        font-size: 3vh
+    }
+
+    .text button {
+        margin: 20px 0 0 0;
+        padding: 8px 12px;
+        color: white;
+        background-color: map-get($colores, "verde");
+        border-radius: 20px;
+        font-size: 15px;
+        justify-content: center;
+        align-content: center;
+        border-color: map-get($colores, "verde");
+        font-weight: bolder
+    }
+
+    .text img {
+        margin-top: 25px;
+        width: 50%;
+
+    }
+
+    .imagen img {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 50%;
+        position: absolute;
+        top: 60%;
+    }
+
+}
