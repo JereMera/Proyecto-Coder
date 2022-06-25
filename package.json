@@ -1,7 +1,6 @@
 {
   "name": "sass-ii-x-seo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -288,7 +287,7 @@
   },
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.18"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -304,5 +303,6 @@
   "bugs": {
     "url": "https://github.com/JereMera/Proyecto-Coder/issues"
   },
-  "homepage": "https://github.com/JereMera/Proyecto-Coder#readme"
+  "homepage": "https://github.com/JereMera/Proyecto-Coder#readme",
+  "description": ""
 }
