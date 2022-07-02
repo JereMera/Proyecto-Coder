@@ -57,19 +57,22 @@
 
   }
 
-  & button {
-    margin-top: 30px;
-    margin-bottom: 70px;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: map-get($colores, "blanco");
-    cursor: pointer;
-    color: map-get($colores, "verde");
-    font-weight: bold;
-
+  & foto{
+    width: 10%;
   }
 }
+
+.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-white);
+  --bs-btn-border-color: var(--bd-white);
+  --bs-btn-border-radius: .5rem;
+  --bs-btn-hover-color: map-get($colores, "verde");
+  --bs-btn-focus-shadow-rgb: var(--bd-verde-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+}
+
 
 .article1 {
   grid-area: a;
